@@ -21,10 +21,10 @@
 <body>
     <div id="app">
         <h1>
-            Vue Email List!
+            Vue Email List! Ten random mails every time you reload!!
         </h1>
 
-        <ul v-if="emailList.length >= 15">
+        <ul v-if="emailList.length >= 10">
             <li v-for="(email, index) in emailList" :key="index">
                 {{ email }}
             </li>
