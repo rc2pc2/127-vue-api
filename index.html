@@ -21,15 +21,20 @@
 <body>
     <div id="app">
         <h1>
-            Vue Email List! Ten random mails every time you reload!!
+            Vue Email List: now with 15 emails! The most you have ever seen!
         </h1>
 
-        <ul v-if="emailList.length >= 10">
+        <h2>API TESTING BRANCH</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis vitae repellat harum minima eligendi laboriosam culpa, aut cupiditate exercitationem nihil ullam officiis voluptates perspiciatis maiores nisi, esse provident est.
+        Eos minima, nam dolor, earum reiciendis quaerat tempora, reprehenderit consectetur modi porro esse nesciunt? Ipsa eos quam temporibus dolore, nihil repellendus, nisi quod a nesciunt sapiente possimus id natus tempore?
+        Delectus veniam a animi? Sunt odio tempore nulla eaque nobis fuga molestias accusantium inventore? Omnis vitae quasi incidunt laudantium impedit sequi ipsa voluptates, expedita ratione recusandae? Et necessitatibus quia vero?</p>
+
+        <ul v-show="emailList.length >= 15">
             <li v-for="(email, index) in emailList" :key="index">
                 {{ email }}
             </li>
         </ul>
-        <p v-else> Loading new emails...</p>
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
